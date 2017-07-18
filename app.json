@@ -17,7 +17,11 @@
       "assetExts": ["ttf", "mp4"]
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sengheng.myreactnative"
+    },
+    "android": {
+      "package": "com.sengheng.myreactnative"
     }
   }
 }
