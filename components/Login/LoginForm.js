@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import {StyleSheet,View,TextInput, TouchableOpacity,Text} from 'react-native';
+import {Alert,StyleSheet,View,TextInput, TouchableOpacity,Text} from 'react-native';
 
 export default class LoginForm extends Component {
+  _onPressButton(){
+    Alert.alert("Button Click")
+  }
   render() {
     return(
       <View style={styles.container}>
@@ -21,7 +24,7 @@ export default class LoginForm extends Component {
         secureTextEntry
         placeholderTextColor="rgba(255,255,255,0.7)"
         style={styles.input}/>
-        <TouchableOpacity style={styles.buttonContainer}>
+        <TouchableOpacity onPress={this._onPressButton} style={styles.buttonContainer}>
           <Text style={styles.buttonText}>LOGIN</Text>
         </TouchableOpacity>
 
